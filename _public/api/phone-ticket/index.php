@@ -246,7 +246,7 @@ try {
             try {
                 $HOME = strlen($_SERVER['DOCUMENT_ROOT']) != 0 ? $_SERVER['DOCUMENT_ROOT'] : "";
 
-                $pdo = new PDO("sqlite:$HOME/../kungconsulting.sqlite");
+                $pdo = new PDO("sqlite:$HOME/../{{ site.data.env.database_name }}.sqlite");
                 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
                 $sql = "CREATE TABLE IF NOT EXISTS KC_DOC_FormData (

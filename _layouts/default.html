@@ -1,10 +1,9 @@
 ---
-# For PHP
+layout: compress
 ---
 
 {% if site.data.env.need_use_php %}
     {% include head_php.php %}
-    {{ content }}
-{% else %}
-    <p>Выключена работа PHP</p>
 {% endif %}
+
+{{ content }}

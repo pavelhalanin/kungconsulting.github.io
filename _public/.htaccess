@@ -1,7 +1,3 @@
----
-layout: php
----
-
 RewriteEngine On
 
 # Перенаправление с www.domain.local на domain.local
