@@ -457,44 +457,6 @@ d_alias: fr
     </div>
 </div>
 
-
-<div id="contacts" class="ptb80 m-ptb50 s-ptb30 bg-maincolor">
-    <div class="main tac white">
-        <h3 class="mb20 white">Nous sommes joignables</h3>
-        <div class="tels">
-            <div class="tac tel_block">
-                <a href="https://wa.me/905308133150" target="_blank" rel="noopener"><img src="/assets/img/icons/whatsapp.png" alt=""></a>
-                 <a href="viber://chat?number=+905308133150"  target="_blank" rel="noopener"><img src="/assets/img/icons/viber.png" alt=""></a>
-                 <a href="https://t.me/Kungconsulting" target="_blank" rel="noopener"><img src="/assets/img/icons/telegram.png" alt=""></a>
-                 <a href="weixin://dl/chat?wxid_ewuabfekvfd122" target="_blank" rel="noopener"><img src="/assets/img/icons/wechat.png" alt=""></a>
-            </div>
-	        <div class="tel1 tel_block">
-    	         <a class="maint white" href="tel:+905462027733">+90 546 202 7733</a>
-            </div>
-            <div class="tel2 tel_block">
-	            <a class="maint white" href="tel:+905308133150">+90 530 813 3150</a>
-	        </div>
-	    </div>
-        <p class="mt20 mb5"><a href="mailto:info@kungconsulting.com" class="white fw700">info@kungconsulting.com</a></p>
-        <p><a href="http://kungconsulting.com/" class="white fw700">www.kungconsulting.com</a></p>
-        <p class="mb0"><strong>KUNG FOOD DIŞ TİCARET LİMİTED ŞİRKETİ</strong><br/>Ataköy 7-8-9-10. Kısım Mah., Çobanceşme E-5 Yanyol Cad. A Blok No: 22/1 İç Kapı No:30, 34158 Bakırköy, İstanbul, Türkiye</p>
-    </div>
-</div>
-
-<div id="map" style="width: 100%; height: 500px"></div>
-
-{% if jekyll.environment == "production" %}
-	<script src="/assets/js/map.js?nocache={{ site.time | date: '%Y-%m-%d_%H-%M' }}"></script>
-{% else %}
-	<script src="/assets/js/map.js"></script>
-{% endif %}
-
-<div class="podval_logo ptb20 bg-maincolor2 white tac">
-	{% include footer.html %}
-</div>
-
-<!-- [[$modal_fr]] -->
+{% include footer.html footer_socials_title="Nous sommes joignables" %}
 {% include modal_fr.html %}
-
-<!-- [[$globalFinish]] -->
 {% include globalFinish.html %}
