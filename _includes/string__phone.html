@@ -1,0 +1,5 @@
+{% if page.HTML_LANG == 'ar' %}
+    {{ include.phone | replace: " ", "" | replace: "+", "" }}+
+{% else %}
+    {{ include.phone }}
+{% endif %}
